@@ -1,0 +1,22 @@
+1. Create a new repository on Github.
+2. Open Git Bash and change working directory to where your files are.
+3. $git init # initializes this location as a local repository.
+4. $ git add -A # Adds the files in the local repository and stages them for commit.
+5. $ git commit -m "First commit"
+6. So far you haven't linked this local repo to the giHub repo. 
+   Below assigns "origin" to the remote repo.
+   $ git remote add origin "https://github.com/smoham12/PetProjectRepo"
+7. $ git remote -v #This will show you the remote repo
+8. $ git push origin master
+   # Pushes the changes in your local repository up to the remote repository you specified as the origin
+9. Now your code is pushed onto github master branch.
+
+To create Branch
+10. git branch #to see list of all available branches
+11. git branch newBranch #to create a new branch locally named "newBranch"
+12. newBranch is identical to master and it is only local at this point. Modify newBranch locally 
+13. now commit the changes locally:
+    $git status
+    $git add -A
+    $git commit -m "new branch commits"
+14. $git push --set-upstream origin newBranch
